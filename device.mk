@@ -25,15 +25,15 @@
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-aosp
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
-
-# Boot animation
-TARGET_SCREEN_HEIGHT := 3168
-TARGET_SCREEN_WIDTH := 1440
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -52,6 +52,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare@1.0-service.oneplus_kona
 
+# API Level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Inherit from oneplus sm8250-common
