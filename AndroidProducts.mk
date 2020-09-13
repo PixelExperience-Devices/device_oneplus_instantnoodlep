@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_instantnoodlep.mk
+    $(LOCAL_DIR)/aosp_instantnoodlep.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_instantnoodlep-user \
-    lineage_instantnoodlep-userdebug \
-    lineage_instantnoodlep-eng
+    aosp_instantnoodlep-user \
+    aosp_instantnoodlep-userdebug \
+    aosp_instantnoodlep-eng
