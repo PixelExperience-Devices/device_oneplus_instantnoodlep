@@ -1,0 +1,14 @@
+[
+  {
+    "repository"   : "device_oneplus_sm8250-common",
+    "target_path"  : "device/oneplus/sm8250-common",
+    "remote"       : "pixel-devices",
+    "branch"       : "eleven"
+  },
+  {
+    "repository"  : "Chandra-Chaganti/vendor_oneplus_instantnoodlep",
+    "target_path" : "vendor/oneplus/instantnoodlep",
+    "branch"      : "eleven",
+    "remote"      : "github"
+  }
+]
