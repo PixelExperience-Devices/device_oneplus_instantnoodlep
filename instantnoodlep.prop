@@ -1,0 +1,7 @@
+# Pixel identification
+ro.build.fingerprint=google/redfin/redfin:11/RQ2A.210305.006/7119741:user/release-keys
+ro.product.manufacturer=Google
+ro.product.device=OnePlus8Pro
+ro.product.brand=google
+ro.product.name=redfin
+ro.product.model=Pixel 5

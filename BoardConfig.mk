@@ -30,6 +30,9 @@ SOONG_CONFIG_ONEPLUS_KONA_FOD_SIZE = 232
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
+# Pixel identification
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/instantnoodlep.prop
+
 # Partitions
 BOARD_SUPER_PARTITION_SIZE := 15032385536
 
