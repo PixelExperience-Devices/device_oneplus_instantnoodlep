@@ -44,10 +44,6 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.recovery.target.rc
 
-# PowerShare
-PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.oneplus_kona
-
 # API Level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
