@@ -11,14 +11,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from instantnoodlep device
 $(call inherit-product, device/oneplus/instantnoodlep/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common PixelExperience stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_instantnoodlep
+# Boot Animation
+TARGET_BOOT_ANIMATION_RES := 1440
+
+# Device identifier. This must come after all inclusions.
+
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# Next Gen Assistant
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+
+PRODUCT_NAME := aosp_instantnoodlep
 PRODUCT_DEVICE := instantnoodlep
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := IN2025
+CUSTOM_DEVICE := OnePlus8Pro
 
 PRODUCT_SYSTEM_NAME := OnePlus8Pro
 PRODUCT_SYSTEM_DEVICE := OnePlus8Pro
@@ -26,8 +38,5 @@ PRODUCT_SYSTEM_DEVICE := OnePlus8Pro
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="OnePlus8Pro-user 12 RKQ1.211119.001 Q.202207300316 release-keys" \
-    TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
-    TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
-
-BUILD_FINGERPRINT := OnePlus/OnePlus8Pro/OnePlus8Pro:12/RKQ1.211119.001/Q.202207300316:user/release-keys
+    TARGET_DEVICE=OnePlus8Pro \
+    TARGET_PRODUCT=OnePlus8Pro
