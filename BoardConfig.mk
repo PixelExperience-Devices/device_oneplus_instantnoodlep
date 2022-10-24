@@ -12,6 +12,9 @@ DEVICE_PATH := device/oneplus/instantnoodlep
 # Display
 TARGET_SCREEN_DENSITY := 450
 
+# Firmware
+-include vendor/oneplus/firmware/BoardConfigVendor.mk
+
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
