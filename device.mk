@@ -21,6 +21,9 @@ PRODUCT_PACKAGES += \
     fstab.qcom.ramdisk
 
 # Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-aosp
+
 PRODUCT_PACKAGES += \
     OnePlus8PWifiOverlay \
     OPlusFrameworksResTarget \
